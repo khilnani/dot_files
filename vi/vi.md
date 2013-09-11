@@ -94,8 +94,10 @@ Navigation
 - <C-u> - up half screen
 - <C-d> - down one screen
 
-Mark Lines
+Mark Lines/Code folding
 ---------------
+
+- za - toggle folding
 
 - m[k] - mark line
 - '[k] - move to mark k
@@ -159,24 +161,6 @@ Search
 - :%s/old/new/g - replace all old with new throughout file
 - :%s/old/new/gc - replace all old with new throughout file with confirmations
 
-.vimrc
----------------
-
-```
-set shiftwidth=2
-set number
-set ignorecase
-set autoindent
-set nolist
-syntax on
-colorscheme jellybeans
-filetype plugin on
-autocmd FileType ruby set omnifunc=rubycomplete#Complete
-autocmd FileType ruby compiler ruby
-autocmd FileType python set omnifunc=pythoncomplete#Complete
-set foldmethod=indent
-set foldlevel=10
-```
 
 
 
