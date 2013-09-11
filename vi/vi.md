@@ -33,29 +33,29 @@ Exec Shell Console Commands
 Pause VIM
 ---------------
 
-- <C-z> - pause and go to shell
+- `<C-z>` - pause and go to shell
 - fg - return 
 
 Windows
 ---------------
 
-- <C-w>n - :new horizontal split (editing a new empty buffer)
-- <C-w>s - :split window horizontally (editing current buffer)
-- <C-w>v - :vsplit window vertically (editing current buffer)
-- <C-w>c - :close window
-- <C-w>o - close all windows, leaving :only the current window open
-- <C-w>w - go to next window
-- <C-w>p - go to previous window
-- <C-w><Up> - go to window above
-- <C-w><Down> - go to window below
-- <C-w><Left> - go to window on left
-- <C-w><Right> - go to window on right
-- <C-w -N> - decrease by line
-- <C-w +N> - increase by line
+- `<C-w>n` - :new horizontal split (editing a new empty buffer)
+- `<C-w>s` - :split window horizontally (editing current buffer)
+- `<C-w>v` - :vsplit window vertically (editing current buffer)
+- `<C-w>c` - :close window
+- `<C-w>o` - close all windows, leaving :only the current window open
+- `<C-w>w` - go to next window
+- `<C-w>p` - go to previous window
+- `<C-w><Up>` - go to window above
+- `<C-w><Down>` - go to window below
+- `<C-w><Left>` - go to window on left
+- `<C-w><Right>` - go to window on right
+- `<C-w -N>` - decrease by line
+- `<C-w +N>` - increase by line
 - :res +N - resize
 - :res -N - resize
-- <C-w_> - maximize window
-- <C-w=> - make all equal
+- `<C-w_>` - maximize window
+- `<C-w=>` - make all equal
 
 Tabs
 ---------------
@@ -94,10 +94,10 @@ Navigation
 - ) - move block down
 - [[ - move section up
 - ]] - move section down
-- <C-b> back one screen
-- <C-f> forward one screen
-- <C-u> - up half screen
-- <C-d> - down one screen
+- `<C-b>` back one screen
+- `<C-f>` forward one screen
+- `<C-u>` - up half screen
+- `<C-d>` - down one screen
 
 Mark Lines/Code folding
 ---------------
