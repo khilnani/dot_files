@@ -13,4 +13,4 @@ set foldmethod=indent
 set foldlevel=10
 
 nmap <buffer> time :call nik#time()<CR>
-nmap <F2> :time 'Current time is ' . strftime('%c')<CR>
+nmap <F2> :echo 'Current time is ' . strftime('%c')<CR>
