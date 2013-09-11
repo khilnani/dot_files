@@ -1,4 +1,4 @@
 #!/bin/sh
 
-cp -rf ./../.vim ~/
-cp -f ./../.vimrc ~/
+cp -rf ./.vim ~/
+cp -f ./.vimrc ~/
