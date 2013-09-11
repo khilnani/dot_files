@@ -162,7 +162,8 @@ Search
 .vimrc
 ---------------
 
-```set shiftwidth=2
+```
+set shiftwidth=2
 set number
 set ignorecase
 set autoindent
