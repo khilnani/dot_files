@@ -1,3 +1,13 @@
+Conque Commands
+--------------
+
+- `:term` if using Nik's .vimrc will split and run bash. Use `:res[ize] 20` to make the window smaller.
+- `:ConqueTerm bash`
+- `:ConqueTermSplit`
+- `:ConqueTermTab`
+- `:ConqueTermVSplit`
+
+
 Auto Completion
 --------------
 
