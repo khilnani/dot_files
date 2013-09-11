@@ -97,7 +97,8 @@ Navigation
 Mark Lines/Code folding
 ---------------
 
-- za - toggle folding
+- za - toggle folding at current indent section
+- zA - toggle folding include any parent indents
 
 - m[k] - mark line
 - '[k] - move to mark k
