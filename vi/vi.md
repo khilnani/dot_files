@@ -103,10 +103,8 @@ Mark Lines/Code folding
 
 - `za` - toggle folding at current indent section
 - `zA` - toggle folding include any parent indents
-
 - `m[k]` - mark line
 - `'[k]` - move to mark k
-
 - `'a-z` - same file
 - `'A-Z` - beteween files
 
