@@ -40,6 +40,7 @@ set foldlevel=10
 "----------------------------------------------
 " display
 
+set ruler   " display the cursor at all times
 set number    " display line numbers. note - selecting text will include the line numbers
 set ignorecase    " ignore case when searching
 set list listchars=tab:··,trail:·   " display tabs and trailing space$
@@ -84,3 +85,8 @@ autocmd FileType python set omnifunc=pythoncomplete#Complete
 
 nmap <buffer> time :call nik#time()<CR>
 nmap <F2> :echo 'Current time is ' . strftime('%c')<CR>
+
+map <S-k> gT
+map <S-l> gt
+map <S-t> :tabnew
+
