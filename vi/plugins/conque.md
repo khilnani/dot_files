@@ -5,7 +5,7 @@ Install Conque
 - `:so %`
 - `:q`
 
-Commands
+Conque Commands
 --------------
 
 - `:ConqueTerm bash`
