@@ -2,7 +2,7 @@ set shiftwidth=2
 set number
 set ignorecase
 set autoindent
-set nolist
+set list
 syntax on
 colorscheme jellybeans
 filetype plugin on
