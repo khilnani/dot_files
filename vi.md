@@ -1,27 +1,39 @@
 Execution
+---------------
+
   :python print 'test'
   :ruby puts 'test'
 
 File Navigation
+---------------
+
   :e - edit file in curent window
   :Explore - file browser
   :E - edit/explore current dir
   :q - quit
 
 Help
+---------------
+
   |topics| - please cursor and <C-]> to naviagte. <C-t> to return
   :help
   :help quickref
   :[letter][TAB] - cycle through commands
 
 Exec Shell Console Commands
+---------------
+
   :! COMMAND
 
 Pause VIM
+---------------
+
   <C-z> - pause and go to shell
   fg - return 
 
 Windows
+---------------
+
   <C-w>n - :new horizontal split (editing a new empty buffer)
   <C-w>s - :split window horizontally (editing current buffer)
   <C-w>v - :vsplit window vertically (editing current buffer)
@@ -41,6 +53,8 @@ Windows
   <C-w=> - make all equal
 
 Tabs
+---------------
+
   :tabnew
   :tabc[close]
   :tabc[close] index
@@ -51,6 +65,8 @@ Tabs
   [N] gt - go to tab N
 
 Buffers
+---------------
+
   :e - edit file 
 
   :hide - close current window
@@ -62,6 +78,8 @@ Buffers
   :b [TAB] cycle through files in buffer by name
 
 Navigation
+---------------
+
   0 -front
   $ - end
   [N]G - go to line
@@ -77,6 +95,8 @@ Navigation
   <C-d> - down one screen
 
 Mark Lines
+---------------
+
   m[k] - mark line
   '[k]      - move to mark k
 
@@ -84,6 +104,8 @@ Mark Lines
   'A-Z    - beteween files
 
 Text Manip
+---------------
+
   i - insert
   ci" or ci' - clear text within " and insert
   I - insert at beginning
@@ -95,7 +117,9 @@ Text Manip
   ea - append end of word
 
 Formatting
-  [N]<< - shoft line
+---------------
+
+  [N]<< - shift line
   [N]>> - shift line
   v - select multi
   V - select lines
@@ -106,6 +130,8 @@ Formatting
   y - copy
 
 Copy/Paste
+---------------
+
   yy - copy a line
   [N]yy - copy N lines
   p - paste after cursor
@@ -116,12 +142,16 @@ Copy/Paste
   u - undo
 
 Save
+---------------
+
   :w - write
   :q - quit
   :wq - write and quit
   :q! - throw away changes
 
 Search
+---------------
+
   /pattern - search for pattern
   ?pattern - search backward for pattern
   n - repeat search in same direction
@@ -130,6 +160,7 @@ Search
   :%s/old/new/gc - replace all old with new throughout file with confirmations
 
 .vimrc
+---------------
 
 set shiftwidth=2
 set number
