@@ -4,7 +4,7 @@
 [core]
     editor = vi
 [color]
-    ui = true
+    ui = always
 [color "branch"]
     current = yellow bold
     local = green bold
