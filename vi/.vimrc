@@ -73,6 +73,14 @@ set wildignore+=log/**
 set wildignore+=tmp/**
 set wildignore+=*.png,*.jpg,*.gif
 
+"----------------------------------------------
+" Terminal in a window setup
+" See https://code.google.com/p/conque
+
+let g:ConqueTerm_Color = 1
+let g:ConqueTerm_EscKey = '<Esc>'
+:cabbrev term ConqueTermSplit bash
+
 
 "----------------------------------------------
 " filetype specific behaviors
