@@ -73,7 +73,6 @@ Buffers
 ---------------
 
 - `:e` - edit file 
-
 - `:hide` - close current window
 - `:only` - only keep this window open
 - `:ls` - list all buffers
