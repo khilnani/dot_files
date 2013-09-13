@@ -77,8 +77,13 @@ set wildignore+=*.png,*.jpg,*.gif
 " Terminal in a window setup
 " See https://code.google.com/p/conque
 
+let g:ConqueTerm_ReadUnfocused = 1
+let g:ConqueTerm_InsertOnEnter = 1
+let g:ConqueTerm_CWInsert = 1
 let g:ConqueTerm_Color = 1
 let g:ConqueTerm_EscKey = '<Esc>'
+let g:ConqueTerm_ReadUnfocused = 1
+
 :cabbrev sh ConqueTermSplit bash
 
 
