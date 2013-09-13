@@ -79,7 +79,7 @@ set wildignore+=*.png,*.jpg,*.gif
 
 let g:ConqueTerm_Color = 1
 let g:ConqueTerm_EscKey = '<Esc>'
-:cabbrev term ConqueTermSplit bash
+:cabbrev sh ConqueTermSplit bash
 
 
 "----------------------------------------------
@@ -103,5 +103,15 @@ nmap <F2> :echo 'Current time is ' . strftime('%c')<CR>
 
 map <S-k> gT
 map <S-l> gt
-map <S-t> :tabnew
+map <S-t> :tabnew<CR>
+map <S-s> :ConqueTermSplit bash<CR>
+
+"----------------------------------------------
+" on Vim Load. see :h startup and :h VimEnter
+
+autocmd VimEnter * ConqueTermSplit bash·
+autocmd VimEnter * resize 20
+
+
+
 
