@@ -28,6 +28,7 @@ Execution
 File Navigation
 ---------------
 
+- `<C-g>` - Current file status
 - `:e` - edit file in curent window
 - `:cd  [NAME]` - Change working directory
 - `:f [NAME]` - Rename file
@@ -40,7 +41,6 @@ File Navigation
 Help
 ---------------
 
-- `<C-g>` - Current file status
 - `|topics|` - please cursor and <C-]> to naviagte. <C-t> to return
 - `:help`
 - `:help quickref`
