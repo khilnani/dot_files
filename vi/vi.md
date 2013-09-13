@@ -1,3 +1,8 @@
+Also 
+--------------
+
+- See http://www.tutorialspoint.com/unix/unix-vi-editor.htm
+
 Conque Commands
 --------------
 
@@ -24,6 +29,10 @@ File Navigation
 ---------------
 
 - `:e` - edit file in curent window
+- `:cd  [NAME]` - Change working directory
+- `:f [NAME]` - Rename file
+- `:w [NAME]` - write to file
+- `:r [NAME]` - Read file and insert after current file
 - `:Explore` - file browser
 - `:E` - edit/explore current dir
 - `:q` - quit
@@ -31,6 +40,7 @@ File Navigation
 Help
 ---------------
 
+- `<C-g>` - Current file status
 - `|topics|` - please cursor and <C-]> to naviagte. <C-t> to return
 - `:help`
 - `:help quickref`
@@ -125,7 +135,6 @@ Text Manip
 - `i` - insert
 - `ci"` or `ci'` - clear text within " and insert
 - `I` - insert at beginning
-- `x` - delete char
 - `a` - append
 - `A` - append to end
 - `o` - open blank line below
@@ -143,16 +152,25 @@ Formatting
 - `<` - shift
 - `d` - delete marked
 - `~` - switch case
-- `y` - copy
+- `yy` - copy line
+- `yw` - copy word
+- `J` - join next line with current
+- 
 
 Copy/Paste
 ---------------
 
+- `ci"` or `ci'` - clear text within " and insert
+- `x` - delete char forward
+- `X` - deletes char backwards
+- `dd` - cut line
+- `dw` - cut cursor till end of word
+- `d^` - cut cursor till start of line
+- `D` - cut from cursor till end of line
 - `yy` - copy a line
 - `[N]yy` - copy N lines
 - `p` - paste after cursor
 - `P` - paste before cursor
-- `dd` - cut
 - `[N]dd` - cut next N lines
 - `.` - repeast last command
 - `u` - undo
