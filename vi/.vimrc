@@ -109,7 +109,7 @@ map <S-s> :ConqueTermSplit bash<CR>
 "----------------------------------------------
 " on Vim Load. see :h startup and :h VimEnter
 
-autocmd VimEnter * ConqueTermSplit bash·
+autocmd VimEnter * ConqueTermSplit bash
 autocmd VimEnter * resize 20
 
 
