@@ -93,14 +93,16 @@ filetype plugin on
 
 autocmd FileType ruby set omnifunc=rubycomplete#Complete
 autocmd FileType ruby compiler ruby
-autocmd FileType ruby map <C-r> :! ruby %
+autocmd FileType ruby map <C-r> :! ruby %<CR>
 
 autocmd FileType python set omnifunc=pythoncomplete#Complete
-autocmd FileType python map <C-r> :! python %
+autocmd FileType python map <C-r> :! python %<CR>
 
-autocmd FileType sh map <C-r> :! sh %
+autocmd FileType sh map <C-r> :! sh %<CR>
 
-autocmd FileType php map <C-r> :! php %
+autocmd FileType php map <C-r> :! php %<CR>
+
+autocmd FileType scala map <C-r> :! scala %<CR>
 
 nmap <buffer> time :call nik#time()<CR>
 nmap <F2> :echo 'Current time is ' . strftime('%c')<CR>
