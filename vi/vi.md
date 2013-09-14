@@ -122,8 +122,12 @@ Navigation
 Mark Lines/Code folding
 ---------------
 
+Also see [http://vim.wikia.com/wiki/Using_marks]
+
 - `za` - toggle folding at current indent section
 - `zA` - toggle folding include any parent indents
+- `:delmarks a` - Delete mark a
+- `:marks` - List all marks
 - `m[k]` - mark line
 - `'[k]` - move to mark k
 - `'a-z` - same file
