@@ -3,9 +3,19 @@ object HelloWorld {
    * This will print 'Hello World' as the output
    */
   def main(args: Array[String]) {
+    
     var h = "Hello"
+    
     if(args.length > 0)
       println("Args: " + args(0))
+    
+    var s : Set[Int] = Set(1,3,5,7)
+    println("head: " + s.head);
+    println("tail: " + s.tail);
+    println("isEmpty: " + s.isEmpty);
+    println("max: " + s.max);
+    println("min: " + s.min);
+    
     var i=0; 
     var j=0;
     for(i <- 1 to 10; j <- 11 to 20
