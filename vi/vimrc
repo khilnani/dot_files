@@ -119,5 +119,5 @@ map <S-s> :ConqueTermSplit bash<CR>
 " autocmd VimEnter * resize 20
 
 
-
+" au BufNewFile *.py r ~/.vim/templates/script.py
 
