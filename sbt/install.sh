@@ -1,6 +1,7 @@
 #!/bin/sh
 
-# sudo port install sbt
+# http://www.scala-sbt.org/release/docs/Getting-Started/Setup.html
+# Mac: sudo port install sbt
 
 VER=0.13.0
 
