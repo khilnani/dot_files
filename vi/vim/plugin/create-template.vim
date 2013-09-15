@@ -27,4 +27,4 @@ au BufNewFile *.rb call MakeFile()
 au BufNewFile *.php call MakeFile()
 au BufNewFile *.pl call MakeFile()
 au BufNewFile *.java call MakeFile()
-
+au BufNewFile *.js call MakeFile()
