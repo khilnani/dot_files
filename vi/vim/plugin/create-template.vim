@@ -1,6 +1,6 @@
-" Vim plugin that generates new bash source file when you type
+" Vim plugin that generates new source file when you type
 "    vim nonexistent.sh.
-"
+" Author: Nik Khilnani <nik@khilnani.org>
 
 function! MakeFile()
     if exists("b:template_used") && b:template_used
