@@ -54,7 +54,7 @@ set noautoread    " do not auto load files if mofieid outside
 " color schemes
 
 syntax on
-colorscheme jellybeans
+colorscheme peachpuff
 
 
 "----------------------------------------------
