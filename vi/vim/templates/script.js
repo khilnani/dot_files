@@ -1,4 +1,4 @@
 #!/usr/bin/env node
 
-var myArgs = process.argv;
-console.log('myArgs: ', myArgs);
+var args = process.argv;
+console.log('args: ', args);
