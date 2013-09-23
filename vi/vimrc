@@ -85,6 +85,7 @@ let g:ConqueTerm_EscKey = '<Esc>'
 
 :cabbrev sh ConqueTermSplit bash
 
+let g:vim_markdown_folding_disabled=1
 
 "----------------------------------------------
 " filetype specific behaviors
