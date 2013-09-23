@@ -11,7 +11,7 @@ function! MakeFile()
     
     let ext= expand("%:e")
 
-    let template = expand($HOME . "/.vim/templates/script." . ext)
+    let template = expand($HOME . "/.vim/templates/template." . ext)
     if(filereadable(template))
       execute "0r " . template
     endif
