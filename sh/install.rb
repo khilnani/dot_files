@@ -10,7 +10,7 @@ end
 
 if File.exists? expTarget
   puts "Copying files to #{expTarget}"
-  system "cp * #{expTarget}"
+  system "cp -f * #{expTarget}"
   system "rm #{expTarget}/install.rb"
 end
 
