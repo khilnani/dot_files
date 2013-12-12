@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh -x
 
 # http://www.scala-sbt.org/release/docs/Getting-Started/Setup.html
 # Mac: sudo port install sbt

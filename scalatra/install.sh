@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh -x
 
 # See http://www.scalatra.org/2.2/getting-started/first-project.html
 

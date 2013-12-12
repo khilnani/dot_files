@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh -x
 
 rm -rf ~/.vim
 rm -f ~/.vimrc
