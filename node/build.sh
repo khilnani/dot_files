@@ -1,9 +1,11 @@
-#!/bin/sh
+#!/bin/sh -x
 
-curl -O http://nodejs.org/dist/v0.10.22/node-v0.10.22.tar.gz
-tar zxf node-v0.10.22.tar.gz
+VER=0.10.22
 
-cd node-v0.10.22-linux-x86
+curl -O http://nodejs.org/dist/v$VER/node-v$VER.tar.gz
+tar zxf node-v$VER.tar.gz
+
+cd node-v$VER
 
 pwd
 
