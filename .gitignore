@@ -6,4 +6,5 @@ c9revisions
 *.rpm
 .netrwhist
 .VimballRecord
+._*
 target

@@ -13,9 +13,18 @@ sed -i -e 's/rhgb quiet/rhgb quiet vga=791/g' /etc/grub.conf
 ##############################################
 #
 ##############################################
+# usermod -p `openssl PASSWORD`
 
 adduser nkhilnani
-adduser nkhilnani sudo
+
+##############################################
+#
+##############################################
+
+yum -y groupinstall "Development Tools"
+yum -y install man
+yum -y install wget
+yum -y install curl
 
 ##############################################
 #
