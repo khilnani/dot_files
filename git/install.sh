@@ -1,3 +1,3 @@
-#!/bin/sh
+#!/bin/sh -x
 
 cp -f ./.gitconfig ~/
