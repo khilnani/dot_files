@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/sh -x
 
 # Google Chrome Installer/Uninstaller for CentOS 6
 # (C) Richard K. Lloyd 2013 <rklloyd@gmail.com>
