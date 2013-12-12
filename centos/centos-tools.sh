@@ -4,22 +4,22 @@
 #
 ##############################################
 
-yum groupinstall "Development Tools"
-yum install ruby
-yum install wget
-yum install curl
-yum install git-core
-yum install links lynx
+yum -y groupinstall "Development Tools"
+yum -y install ruby
+yum -y install wget
+yum -y install curl
+yum -y install git-core
+yum -y install links lynx
 
-yum install gcc g++ make automake autoconf curl-devel openssl-devel zlib-devel httpd-devel apr-devel apr-util-devel sqlite-devel
+yum -y install gcc g++ make automake autoconf curl-devel openssl-devel zlib-devel httpd-devel apr-devel apr-util-devel sqlite-devel
 
-yum install ruby-rdoc ruby-devel
+yum -y install ruby-rdoc ruby-devel
 
-yum install rubygems
+yum -y install rubygems
 gem update
 gem update --system
 
-yum install python-setuptools
+yum -y install python-setuptools
 easy_install pip
 
 ##############################################
