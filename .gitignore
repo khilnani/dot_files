@@ -1,6 +1,9 @@
 .DS_Store
 c9revisions
 *.swp
+*.tar
+*.tar.gz
+*.rpm
 .netrwhist
 .VimballRecord
 target
