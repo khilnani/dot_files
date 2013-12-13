@@ -7,6 +7,7 @@ My custom dot files are free to use provided you say thanks.
 - centos (CentOS 6.5 setup scripts)
   - CLI, GUI, common tools
   - Vagrant VM/Box/Package setup for VirtualBox CentOS image
+  - Chrome 28 installer (from http://chrome.richardlloyd.org.uk)
 - git
   - Basic git config
 - node
