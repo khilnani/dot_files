@@ -3,6 +3,7 @@
 import sys
 import os
 import subprocess
+from optparse import OptionParser
 
 def parseBool (obj):
   obj_str = str(obj).strip().lower()
@@ -25,18 +26,38 @@ def readConsole(prompt='Please type/paste content:', required=True, bool=False):
       content = readConsole (prompt, required, bool)
   return content
 
+parser = OptionParser()
+parser.add_option("-a", "--all", action="store_true", dest="delete_all", default=False)
+parser.add_option("-f", "--force", action="store_true", dest="force", default=False)
+
+(options, args) = parser.parse_args()
+delete_all = options.delete_all
+
+# print 'Force? {}'.format(options.force)
+
+if options.delete_all == True and options.force == False:
+  confirm = readConsole('Delete ALL? : ', True, True)
+  if parseBool(confirm) == False:
+    delete_all = False
+
+# print 'Delete all? {}'.format(delete_all)
+
 op = subprocess.check_output('VBoxManage list vms', shell=True)
-print op
-confirm = readConsole('Delete all <inaccessible> VMs ? :', True, True)
-if parseBool(confirm) == True:
-  items = [line.split(' ') for line in op.split('\n')]
-  for ea in items:
-    if ea[0].find('<inaccessible>') != -1:
+items = [line.split('" ') for line in op.split('\n')]
+
+print ''
+
+for ea in items:
+  if len(ea[0].strip()) == 0:
+    pass
+  else:
+    if delete_all == True:
       os.system('VBoxManage unregistervm {}'.format(ea[1]))
-  print 'Done.'
-else:
-  print 'Aborted.'
+      print '- Deleted {}"'.format(ea[0])
+    else:
+      confirm = readConsole('{}" - Delete? : '.format(ea[0]), True, True)
+      if parseBool(confirm) == True:
+        os.system('VBoxManage unregistervm {}'.format(ea[1]))
+        print '- Deleted {}"'.format(ea[0])
 
-
-
-
+print ''
