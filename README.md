@@ -10,8 +10,10 @@ My custom dot files are free to use provided you say thanks.
   - Vagrant VM/Box/Package setup for VirtualBox CentOS image
   - Chrome 28 installer (from http://chrome.richardlloyd.org.uk)
 - **vagrant** - Vagrant Boxes
-  - Vagrant boxes for CentOS 6.5 i386 and Ubuntu 12 i386
   - Script to install the Vagrant insecure public key
+  - Download the boxes below and run `add.sh` to install them to Vagrant 
+    - CentOS 6.5 i386 - 
+    - Ubuntu 12 i386 - 
 - **git**
   - Basic git config
 - **node** (Node.js)
