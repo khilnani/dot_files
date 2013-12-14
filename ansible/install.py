@@ -16,7 +16,8 @@ if sys.platform == "darwin":
   else:
     print 'Xcode found.'
 elif sys.platform == "linux" or sys.platform == "linux2":
-  os.system('yum -y install git-core')
+  pass
+  #os.system('yum -y install git-core')
 else:
   print 'Your platform {} is not supported.'.format(sys.platform)
   sys.exit()
