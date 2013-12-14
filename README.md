@@ -12,7 +12,7 @@ My custom dot files are free to use provided you say thanks.
 - **vagrant** - Vagrant Boxes
   - Script to install the Vagrant insecure public key
   - Run `add.sh` to install the Vagrant Boxes below
-    - CentOS 6.5 i386 (see centos dir for steps to create)
+    - CentOS 6.5 i386 (see 'centos' dir for details)
     - Ubuntu 12 i386 
 - **git**
   - Basic git config
