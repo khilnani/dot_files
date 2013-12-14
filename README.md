@@ -10,7 +10,7 @@ My custom dot files are free to use provided you say thanks.
   - Vagrant VM/Box/Package setup for VirtualBox CentOS image
   - Chrome 28 installer (from http://chrome.richardlloyd.org.uk)
 - **vagrant** - Vagrant Boxes
-  - Script to install the Vagrant insecure public key
+  - Run `install_vagrant_sshkey.sh` to install the Vagrant insecure public key
   - Run `add-remote-boxes.sh` to install the Vagrant Boxes below
     - CentOS 6.5 i386 (see 'centos' dir for details)
     - Ubuntu 12 i386 
