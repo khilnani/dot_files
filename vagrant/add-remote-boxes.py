@@ -24,3 +24,4 @@ else:
       os.system('vagrant box add {} {}'.format(box['name'], box['url']))
     else:
       print('Box {} already exists.'.format(box['name']))
+
