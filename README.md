@@ -11,9 +11,9 @@ My custom dot files are free to use provided you say thanks.
   - Chrome 28 installer (from http://chrome.richardlloyd.org.uk)
 - **vagrant** - Vagrant Boxes
   - Script to install the Vagrant insecure public key
-  - Download the boxes below and run `add.sh` to install them to Vagrant 
-    - CentOS 6.5 i386 - 
-    - Ubuntu 12 i386 - 
+  - Run `add.sh` to install the Vagrant Boxes below
+    - CentOS 6.5 i386 (see centos dir for steps to create)
+    - Ubuntu 12 i386 
 - **git**
   - Basic git config
 - **node** (Node.js)
