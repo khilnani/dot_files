@@ -21,7 +21,7 @@ except:
 else:
   for box in boxes:
     print('Box {} ...'.format(box['name']))
-    if any( box['name'] in b for b in installed_boxes):
+    if any( box['name'] == b for b in installed_boxes):
       print('Box {} already exists.'.format(box['name']))
     else:
       print('Adding Box {} from {}'.format(box['name'],box['url']))
