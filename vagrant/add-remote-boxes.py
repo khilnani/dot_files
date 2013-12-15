@@ -7,6 +7,7 @@ import subprocess
 installed_boxes = []
 boxes = [
           {'name': 'centos-6.5',  'url': 'https://dl.dropboxusercontent.com/u/26568959/VagrantBoxes/CentOS-6.5-i386.box'},
+          {'name': 'centos-6.5-gui',  'url': 'https://dl.dropboxusercontent.com/u/26568959/VagrantBoxes/CentOS-6.5-Gui-i386.box'},
           {'name': 'ubuntu-12',   'url': 'https://dl.dropboxusercontent.com/u/26568959/VagrantBoxes/Ubuntu-12.04.3-i386.box'}
         ]
 
