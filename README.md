@@ -10,10 +10,16 @@ My custom dot files are free to use provided you say thanks.
   - Vagrant VM/Box/Package setup for VirtualBox CentOS image
   - Chrome 28 installer (from http://chrome.richardlloyd.org.uk)
 - **vagrant** - Vagrant Boxes
-  - Run `install_vagrant_sshkey.sh` to install the Vagrant insecure public key
   - Run `add-remote-boxes.py` to install the Vagrant Boxes below
     - CentOS 6.5 i386 (see 'centos' dir for details)
     - Ubuntu 12 i386 
+  - *ssh*
+    - `download-vagrant-ssh-keys.sh` - Download the public vagrant keys
+    - `install-vagrant-ssh-pub-key.sh` Install the Vagrant insecure public key to authorized keys
+- **ansible**
+  - `install-ansible.py` - Installer script fo Mac OS X and Linux/CentOS
+  - *sample*
+    - Simple reference setup of an Ansible playbook with instructions
 - **git**
   - Basic git config
 - **node** (Node.js)
