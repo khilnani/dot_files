@@ -19,7 +19,7 @@ My custom dot files are free to use provided you say thanks.
   - sbt
   - scalatra
 - **sh/** - globally accessible scripts, bash, python, ruby
-  - Virtual Box
+  - Virtual Box helpers
   - Recursive git pull
   - Python pip helpers
   - Python virtual env helpers
