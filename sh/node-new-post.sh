@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-npm install gulp --save-dev
+npm install gulp gulp-util --save-dev 
 npm install browserify --save-dev
 npm install coffee --save-dev
 
