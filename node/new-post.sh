@@ -2,7 +2,7 @@
 
 npm install gulp --save-dev
 npm install browserify --save-dev
+npm install coffee --save-dev
 
 npm install async --save
-
 
