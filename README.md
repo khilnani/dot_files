@@ -8,7 +8,7 @@ My custom dot files are free to use provided you say thanks.
 - **git/**
   - Basic git config
 - **node/** (Node.js)
-  - CentOS installer
+  - CentOS, AWS, Build/Install, Global module installers
 - **py/** (Python)
   - PIP - Python package manager (https://github.com/pypa/pip)
   - Dropbox python sdk
