@@ -1,6 +1,6 @@
 #!/usr/bin/ruby
 
-target = '~/bin'
+target = '/usr/local/bin'
 expTarget = File.expand_path(target)
 
 unless File.exists? expTarget
