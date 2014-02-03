@@ -1,5 +1,6 @@
 #!/usr/bin/env sh
 
+npm install -g bower
 npm install -g express
 npm install -g coffee
 
