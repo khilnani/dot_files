@@ -12,3 +12,4 @@ ln -s /usr/local/bin/npm /usr/bin/npm
 ln -s /usr/local/bin/node-waf /usr/bin/node-waf
 
 npm install -g express
+npm install -g coffee
