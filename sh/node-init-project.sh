@@ -8,9 +8,15 @@ npm install gulp gulp-util --save-dev
 npm install gulp-jade --save-dev
 npm install gulp-coffee --save-dev
 npm install gulp-less --save-dev
+npm install gulp-exec --save-dev
+
+npm install phantomjs --save-dev
+npm install coffee-script --save-dev
+npm install docco --save-dev
 
 npm install express --save
 npm install jade --save
 npm install less-middleware --save
 npm install async --save
+
 
