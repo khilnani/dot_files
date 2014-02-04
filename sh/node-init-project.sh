@@ -11,6 +11,7 @@ npm install gulp-less --save-dev
 npm install gulp-exec --save-dev
 npm install gulp-jshint --save-dev
 npm install jshint-stylish --save-dev
+npm install map-stream --save-dev
 
 npm install phantomjs --save-dev
 npm install coffee-script --save-dev
