@@ -5,6 +5,9 @@ npm install -g forever
 npm install -g express
 npm install -g coffee
 
+npm install -g yo
+npm install -g yo generator-generator
+
 npm install -g mocha
 npm install -g docco
 

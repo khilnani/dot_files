@@ -17,6 +17,8 @@ npm install gulp-mocha --save-dev
 npm install gulp-handlebars --save-dev
 npm install gulp-declare --save-dev
 npm install gulp-concat --save-dev
+npm install gulp-rename --save-dev
+npm install gulp-debug --save-dev
 
 npm install should --save-dev
 npm install chai --save-dev
