@@ -5,6 +5,7 @@ npm install -g forever
 npm install -g express
 npm install -g coffee
 
+npm install -g mocha
 npm install -g docco
 
 npm install -g gulp
