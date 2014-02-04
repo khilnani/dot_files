@@ -14,6 +14,9 @@ npm install gulp-exec --save-dev
 npm install gulp-jshint --save-dev
 npm install jshint-stylish --save-dev
 npm install gulp-mocha --save-dev
+npm install gulp-handlebars --save-dev
+npm install gulp-declare --save-dev
+npm install gulp-concat --save-dev
 
 npm install should --save-dev
 npm install chai --save-dev
