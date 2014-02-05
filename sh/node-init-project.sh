@@ -29,8 +29,10 @@ npm install coffee-script --save-dev
 npm install docco --save-dev
 
 npm install express --save
+npm install handlebars --save
 npm install jade --save
 npm install less-middleware --save
+npm install express3-handlebars --save
 npm install async --save
 npm install dysf.utils --save
 
