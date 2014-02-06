@@ -21,6 +21,7 @@ npm install gulp-rename --save-dev
 npm install gulp-debug --save-dev
 npm install gulp-bump --save-dev
 npm install gulp-git --save-dev
+npm install gulp-browserify --save-dev
 
 npm install should --save-dev
 npm install chai --save-dev
