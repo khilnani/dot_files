@@ -5,6 +5,7 @@ npm install coffee --save-dev
 npm install browserify --save-dev
 
 npm install map-stream --save-dev
+npm install through2 --save-dev
 
 npm install gulp gulp-util --save-dev 
 npm install gulp-jade --save-dev
@@ -18,10 +19,12 @@ npm install gulp-handlebars --save-dev
 npm install gulp-declare --save-dev
 npm install gulp-concat --save-dev
 npm install gulp-rename --save-dev
+npm install gulp-replace --save-dev
 npm install gulp-debug --save-dev
 npm install gulp-bump --save-dev
 npm install gulp-git --save-dev
 npm install gulp-browserify --save-dev
+npm install gulp-intercept --save-dev
 
 npm install should --save-dev
 npm install chai --save-dev
