@@ -39,4 +39,5 @@ npm install less-middleware --save
 npm install express3-handlebars --save
 npm install async --save
 npm install dysf.utils --save
-
+npm install mongodb --save
+npm install mongoose --save-
