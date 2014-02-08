@@ -12,4 +12,4 @@ sudo yum install -y mongo-10gen-server
 
 sudo chkconfig mongod on
 
-sudo  /etc/mongod.conf
+sudo vi  /etc/mongod.conf
