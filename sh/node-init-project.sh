@@ -23,6 +23,7 @@ npm install gulp-replace --save-dev
 npm install gulp-debug --save-dev
 npm install gulp-bump --save-dev
 npm install gulp-git --save-dev
+npm install glob --save-dev
 npm install gulp-browserify --save-dev
 npm install gulp-intercept --save-dev
 
