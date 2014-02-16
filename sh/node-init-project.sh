@@ -33,6 +33,11 @@ npm install phantomjs --save-dev
 npm install coffee-script --save-dev
 npm install docco --save-dev
 
+npm install co --save
+npm install thunkify --save
+npm install suspend --save
+npm install koa --save
+
 npm install express --save
 npm install handlebars --save
 npm install jade --save
