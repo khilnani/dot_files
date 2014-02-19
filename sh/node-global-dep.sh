@@ -24,3 +24,5 @@ npm install -g jade
 npm install -g handlebars
 npm install -g browserify
 npm install -g karma
+
+npm install -g doctoc
