@@ -1,5 +1,5 @@
 .files
-=========
+==========
 
 All files are copyright their respective owners.
 
