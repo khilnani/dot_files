@@ -6,3 +6,4 @@ config
 - git config --global color.ui true
 - git config --global --edit
 - git config --global credential.helper cache
+- git config --global credential.helper "cache --timeout=3600"
