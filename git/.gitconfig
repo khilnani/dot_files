@@ -4,7 +4,7 @@
 [core]
     editor = vi
 [color]
-    ui = always
+    ui = true
 [color "branch"]
     current = yellow bold
     local = green bold
@@ -19,5 +19,11 @@
     added = green bold
     changed = yellow bold
     untracked = red bold
+[diff]
+    tool = vimdiff
+[difftool]
+    prompt = true
+[credential]
+  helper = cache --timeout=3600
 [push]
-    default = matching
+  default = simple`
