@@ -26,3 +26,5 @@ for DIR in `ls -d */`; do
     echo "OK: \t$DIR"
   fi
 done
+
+echo "--"
