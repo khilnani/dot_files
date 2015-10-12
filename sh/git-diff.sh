@@ -12,8 +12,7 @@ for DIR in `ls -d */`; do
   # echo $DIR
   COUNT=`grep $DIR diff.log | wc -l`
   if [ $COUNT != "0" ]; then
-    #echo "CHANGED: $DIR ($COUNT)"
-    echo "CHANGED: $DIR"
+    echo "CHANGED: $DIR ($COUNT)"
   fi
 done
 
