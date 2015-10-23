@@ -2,7 +2,7 @@
 
 # See http://www.scalatra.org/2.2/getting-started/first-project.html
 
-VER=2.10.2
+VER=2.11.7
 
 curl -O http://www.scala-lang.org/files/archive/scala-$VER.tgz
 gzip -dc scala-$VER.tgz | tar xf -
