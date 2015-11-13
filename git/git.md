@@ -9,9 +9,11 @@ config
 - `git config --global credential.helper "cache --timeout=3600"`
 - `git config --global credential.helper store`
 
+ssh
 ----------
 - `ssh-keygen -t rsa -b 4096 -C "EMAIL"`
 - `eval "$(ssh-agent -s)"` - Start SSH Agent
 - `ssh-add ~/.ssh/id_rsa`
 - Add `~/.ssh/id_rsa.pub` to Github account
 - Test `ssh -T git@github.com`
+- `git clone git@github.com:khilnani/dot_files.git`
