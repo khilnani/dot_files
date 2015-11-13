@@ -20,7 +20,8 @@ ssh
 
 https > ssh
 -----------
-- `git remote -v`
+- Check current remote urls
+  - `git remote -v`
   ```
   # origin  https://github.com/USERNAME/REPOSITORY.git (fetch)
   # origin  https://github.com/USERNAME/REPOSITORY.git (push)
