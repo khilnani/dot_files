@@ -14,3 +14,4 @@ config
 - `eval "$(ssh-agent -s)"` - Start SSH Agent
 - `ssh-add ~/.ssh/id_rsa`
 - Add `~/.ssh/id_rsa.pub` to Github account
+- Test `ssh -T git@github.com`
