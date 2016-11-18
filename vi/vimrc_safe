@@ -1,4 +1,43 @@
 
+" Windows
+"------------------------
+" :split
+" :vsplit
+" <C-W>n new
+" <C-W>s split
+" <C-W>v vsplit
+" <C-W>c close
+" <C-W>o others
+map <C-w>] <C-w>w
+map <C-w>[ <C-w>p
+
+" Tabs
+" -------------------------
+" :tabnew
+" :tabedit NAME
+" :tabn
+" :tabp
+" :tabc
+" :tabo (others)
+map <C-t>] :tabn<CR>
+map <C-t>[ :tabp<CR>
+map <C-t>n :tabnew<CR>
+map <C-t>c :tabc<CR>
+map <C-t>o :tabo<CR>
+
+" Shell
+"----------------------------
+" :! COMMAND
+" :! bash - exit to leave
+" C-z  - shell
+" fg  - return
+
+" Shell
+" "--------------------------
+" :sh - enter
+" C-d - return
+
+
 
 "----------------------------------------------
 " setup 
@@ -14,7 +53,7 @@ set shiftwidth=2
 set autoindent    " auto indent. note - causes issues when pasting text with indents
 set smarttab
 set smartindent
-set tabstop=2
+set tabstop=4
 set expandtab
 set nowrap    " do not wrap
 set linebreak   " wraplines at convinient points
