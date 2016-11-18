@@ -109,3 +109,27 @@ set wildignore+=*.gem
 set wildignore+=log/**
 set wildignore+=tmp/**
 set wildignore+=*.png,*.jpg,*.gif
+
+
+"----------------------------------------------
+" filetype specific behaviors
+
+filetype plugin on
+
+autocmd BufNewFile,BufRead *.json set ft=javascript
+
+autocmd FileType ruby set omnifunc=rubycomplete#Complete
+autocmd FileType ruby compiler ruby
+autocmd FileType ruby map <C-r> :! ruby %<CR>
+
+autocmd FileType python set omnifunc=pythoncomplete#Complete
+autocmd FileType python map <C-r> :! python %<CR>
+
+autocmd FileType sh map <C-r> :! sh %<CR>
+
+autocmd FileType php map <C-r> :! php %<CR>
+
+autocmd FileType scala map <C-r> :! scala %<CR>
+
+nmap <buffer> time :call nik#time()<CR>
+nmap <F2> :echo 'Current time is ' . strftime('%c')<CR>

@@ -130,6 +130,8 @@ let g:vim_markdown_folding_disabled=1
 
 filetype plugin on
 
+autocmd BufNewFile,BufRead *.json set ft=javascript
+
 autocmd FileType ruby set omnifunc=rubycomplete#Complete
 autocmd FileType ruby compiler ruby
 autocmd FileType ruby map <C-r> :! ruby %<CR>
