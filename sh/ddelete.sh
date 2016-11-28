@@ -1,7 +1,7 @@
 #!/bin/sh
 
 echo "Deleting containers"
-docker rm $(docker ps -a -q)
+docker rm $(docker ps -a -q) --force
 
 echo "Deleting images"
-docker rmi $(docker images -q)
+docker rmi $(docker images -q) --force
