@@ -1,3 +1,3 @@
 #!/bin/sh
 
-ocker push $1:latest
+docker push $1:latest
