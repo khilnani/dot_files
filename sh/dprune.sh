@@ -1,4 +1,4 @@
 #!/bin/sh
 
-# Requires 1.13
-docker system prune
+echo "Deleting dangling containers"
+docker rmi $(docker images --filter dangling=true -q) --force
