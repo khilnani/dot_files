@@ -49,7 +49,7 @@ set nocompatible
 " indentation 
 
 filetype indent on    " turn on indenting
-set shiftwidth=2
+set shiftwidth=4
 set autoindent    " auto indent. note - causes issues when pasting text with indents
 set smarttab
 set smartindent
