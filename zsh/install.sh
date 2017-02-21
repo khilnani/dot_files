@@ -13,7 +13,7 @@ fi
 ./_ohmyzsh.sh
 
 # Replace default theme
-sed -ie 's/robbyrussell/avit/g' ~/.zshrc 
+sed -ie 's/robbyrussell/avit/g' ~/.zshrc
 
 wget https://raw.githubusercontent.com/sindresorhus/pure/master/pure.zsh
 wget https://raw.githubusercontent.com/sindresorhus/pure/master/async.zsh
