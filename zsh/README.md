@@ -14,7 +14,7 @@
 
 ### Ubuntu / Simple
 
-- Installs zsh, oh my zsh and the avit theme
+- Installs vim, git, zsh, oh my zsh and the avit theme
   - `curl -L http://khl.io/nik-zsh | sh`
 
 ### General - Multi Platform with Fonts
