@@ -10,14 +10,9 @@
   - Update `.~/zshrc` with `ZSH_THEME="powerlevel9k/powerlevel9k"`
 - https://powerline.readthedocs.io/en/latest/installation/linux.html#font-installation
 
-## Installation
 
-### Ubuntu / Simple
+## Instructions
 
-- Installs vim, git, zsh, oh my zsh and the avit theme
-  - `curl -L http://khl.io/nik-zsh | sh`
-
-### General - Multi Platform with Fonts
 - Install zsh
   - Ubuntu - `zsh-ubuntu.sh`
   - OS X - `zsh-osx.sh` (Installs brew)

@@ -5,6 +5,8 @@ All files are copyright their respective owners.
 
 My custom dot files are free to use provided you say thanks.
 
+## Directory
+
 - **git/**
   - Basic git config
 - **sh/** - globally accessible scripts, bash, python, ruby
@@ -16,3 +18,10 @@ My custom dot files are free to use provided you say thanks.
   - Max OS X Terminal Profile - jellybean
 - **vi/**
   - vi configuration, plugins and templates
+- **zsh/**
+  - zsh configuration
+
+## Quick and SImple
+
+- Installs vim, git, zsh, oh my zsh and the avit theme
+  - `curl -L http://khl.io/nik-dot-files | sh`
