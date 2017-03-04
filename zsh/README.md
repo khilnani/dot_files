@@ -12,6 +12,12 @@
 
 ## Installation
 
+### Ubuntu / Simple
+
+- Installs vim, git, zsh, oh my zsh and the avit theme
+  - `curl -L http://khl.io/nik-zsh | sh`
+
+### General - Multi Platform with Fonts
 - Install zsh
   - Ubuntu - `zsh-ubuntu.sh`
   - OS X - `zsh-osx.sh` (Installs brew)
