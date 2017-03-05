@@ -1,3 +1,10 @@
+## Install
+
+- `curl -L http://khl.io/nik-gitconfig | sh`
+
+
+## Notes
+
 > Snippets from http://git-scm.com/book/
 
 Create Repo from Current Project
