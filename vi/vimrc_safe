@@ -43,7 +43,7 @@ map <C-t>o :tabo<CR>
 " setup 
 
 set nocompatible
-
+set visualbell
 
 "----------------------------------------------
 " indentation 

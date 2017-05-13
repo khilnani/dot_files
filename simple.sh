@@ -17,3 +17,8 @@ else
 fi
 
 echo 'export PS1="\t \u@\W \\$ "' >> ~/.bashrc
+echo 'setterm -blength 0' >> ~/.bashrc
+
+echo ''
+echo 'Edit: /etc/inputrc uncomment/add set bell-style none'
+echo ''
