@@ -15,3 +15,5 @@ else
     echo 'export NVM_DIR="$HOME/.nvm"' >> ~/.zshrc
     echo '[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm' >> ~/.zshrc
 fi
+
+echo 'export PS1="\t \u@\W \\$ "' >> ~/.bashrc
