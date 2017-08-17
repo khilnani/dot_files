@@ -1,4 +1,4 @@
-#!/bin/sh -x
+#!/bin/sh
 
 if test -z "$2"
 then
