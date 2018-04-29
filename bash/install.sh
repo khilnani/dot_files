@@ -1,6 +1,6 @@
 #!/bin/sh
 
-rsync -av --progress .dircolors $HOME
+rsync -av --progress .dircolors .minttyrc $HOME
 
 cat >>~/.bashrc <<EOL
 PROMPT_DIRTRIM=2
