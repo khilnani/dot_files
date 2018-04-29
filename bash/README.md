@@ -1,18 +1,10 @@
 
-## Shell Prompt
 
-- `PROMPT_DIRTRIM=2`
-- Update `~/.bashrc` with `PS1='[\e[37;1m\u@\e[30m\W\e[0m]\$ '`
 
 ## Shell Colors
 
 - http://linux-sxs.org/housekeeping/lscolors.html
-- Update `~/.bashrc` with:
-```
-alias ls='ls --color'
-LS_COLORS='di=1:fi=0:ln=31:pi=5:so=5:bd=5:cd=5:or=31:mi=0:ex=36:*.rpm=90'
-export LS_COLORS
-```
+
 ### Parameters
 
 ```
