@@ -1,3 +1,4 @@
 - https://terminal.sexy/#ACs2k6GhACs23DIvhZkAtYkAJovSbHHEKqGYk6GhZXuD3DIvhZkAtYkAJovSbHHEKqGY_fbj
+- https://github.com/altercation/solarized/tree/master/vim-colors-solarized
 - https://github.com/neilpa/cmd-colors-solarized
 - https://github.com/mavnn/mintty-colors-solarized
