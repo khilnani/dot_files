@@ -68,10 +68,17 @@ set sidescroll=1
 
 "----------------------------------------------
 " code folding
+" zo - opens all fold
+" zO - opens single fold
+" zc - closes
+" zm - reduces level of fold by one
+" zM - closes all open folds
+" [z - move to start of open fold
+" ]z - move to end of open fold
 
-set foldmethod=indent   "fold based on indent
+set foldmethod=indent   "fold based on indent, syntax
 set foldnestmax=3       "deepest fold is 3 levels
-set foldenable        "dont fold by default
+set nofoldenable          "set nofoldenable
 set foldlevel=10
 
 
@@ -93,7 +100,9 @@ set noautoread    " do not auto load files if mofieid outside
 " color schemes
 
 syntax on
-colorscheme jellybeans
+"colorscheme jellybeans
+set background=dark
+colorscheme solarized
 
 
 "----------------------------------------------
