@@ -101,9 +101,9 @@ set noautoread    " do not auto load files if mofieid outside
 
 syntax on
 "colorscheme jellybeans
-set background=dark
-colorscheme solarized
-
+"set background=dark
+"colorscheme solarized
+colorscheme github
 
 "----------------------------------------------
 " code completion
