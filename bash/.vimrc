@@ -96,6 +96,11 @@ set showcmd   " show incomplete commands in status bar
 set showmode    "show mode at the bottom
 set noautoread    " do not auto load files if mofieid outside
 
+" Cusor customization
+"let &t_ti.="\e[1 q"
+"let &t_SI.="\e[5 q"
+"let &t_EI.="\e[1 q"
+"let &t_te.="\e[0 q"
 
 "----------------------------------------------
 " color schemes
@@ -171,4 +176,5 @@ map <S-s> :ConqueTermSplit bash<CR>
 
 
 " au BufNewFile *.py r ~/.vim/templates/script.py
+
 
