@@ -86,6 +86,7 @@ set foldlevel=10
 " display
 
 set ruler   " display the cursor at all times
+set cursorline
 set number    " display line numbers. note - selecting text will include the line numbers
 set ignorecase    " ignore case when searching
 "set list listchars=tab:··,trail:·,eol:^   " display tabs and trailing space$
@@ -100,10 +101,9 @@ set noautoread    " do not auto load files if mofieid outside
 " color schemes
 
 syntax on
-"colorscheme jellybeans
-"set background=dark
+set background=dark
 "colorscheme solarized
-colorscheme github
+colorscheme jellybeans
 
 "----------------------------------------------
 " code completion
