@@ -1,7 +1,36 @@
 #!/bin/sh
 
-rsync -av --progress .dircolors $HOME
-rsync -av --progress .minttyrc $HOME
+
+#############################################
+# Bin
+#############################################
+
+
+BINDIR=/usr/local/bin
+
+
+if [ "$(uname)" == "Darwin" ]; then
+  echo "MacOS"
+elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+  echo "Ubuntu"
+elif [ "$(expr substr $(uname -s) 1 5)" == "MINGW" ]; then
+  echo "Windows"
+  BINDIR=$HOME/bin
+fi
+
+
+if [ ! -d "$BINDIR" ]; then
+    mkdir -p $BINDIR
+fi
+
+rsync -av --progress ./bin $BINDIR --exclude install.sh --exclude bin
+
+
+#############################################
+# This directory without ./bin
+#############################################
+
+rsync -av --progress . $HOME --exclude install.sh --exclude bin
 
 cat >>~/.bashrc <<EOL
 PROMPT_DIRTRIM=2

@@ -3,6 +3,7 @@ MiddleClickAction=void
 RightClickAction=paste
 BellFlash=yes
 Term=xterm-256color
+CursorType=block
 
 # Google.light from Terminal.sexy
 
