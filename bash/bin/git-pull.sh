@@ -1,3 +1,3 @@
-#!/bin/sh
+#!/bin/sh -x
 
-find . -type d -name .git -exec sh -c "cd \"{}\"/../ && pwd && git status && git pull --all" \;
+find . -type d -name .git -exec sh -c "cd \"{}\"/../ && pwd && git pull --all" \;
