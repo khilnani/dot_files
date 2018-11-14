@@ -18,6 +18,8 @@ elif [ "$(expr substr $(uname -s) 1 5)" == "MINGW" ]; then
   BINDIR=$HOME/bin
 fi
 
+echo "Installing to $BINDIR"
+
 
 if [ ! -d "$BINDIR" ]; then
     mkdir -p $BINDIR
