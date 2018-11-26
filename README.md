@@ -2,9 +2,8 @@
 ==========
 
 
-All files are copyright their respective owners.
-
-My custom dot files are free to use provided you say thanks.
+> All files are copyright their respective owners. 
+> The files are free to use provided you say thanks.
 
 Defaults
 
