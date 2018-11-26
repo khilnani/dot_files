@@ -3,8 +3,8 @@
 if [ "$#" -ne 1 ]; then
     echo "Please specify a branch name"
 else
-	git checkout "$1"
-	git merge master
+    git fetch
+    git merge origin/master
 fi
 
 
