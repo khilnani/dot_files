@@ -19,19 +19,21 @@ elif [ "$(expr substr $(uname -s) 1 5)" == "MINGW" ]; then
   BINDIR=$HOME/bin
 fi
 
-echo "Installing to $BINDIR"
+echo "---- Installing to $BINDIR"
 
 
 if [ ! -d "$BINDIR" ]; then
     mkdir -p $BINDIR
 fi
 
-rsync -av --progress ./bin $BINDIR --exclude install.sh --exclude bin
+rsync -av --progress ./bin/** $BINDIR
 
 
 #############################################
 # This directory without ./bin
 #############################################
+
+echo "---- Installing . to $HOME"
 
 rsync -av --progress . $HOME --exclude install.sh --exclude bin
 
