@@ -40,11 +40,11 @@ map <C-t>o :tabo<CR>
 " indentation 
 
 filetype indent on    " turn on indenting
-set shiftwidth=4
+set shiftwidth=2
 set autoindent    " auto indent. note - causes issues when pasting text with indents
 set smarttab
 set smartindent
-set tabstop=4
+set tabstop=2
 set expandtab
 set nowrap    " do not wrap
 set linebreak   " wraplines at convinient points
