@@ -17,9 +17,9 @@ then
 		rm -rf $TMPDIR/sri-file
 		curl $1 -o $TMPDIR/sri-file
 		sha=`openssl dgst -sha256 -binary $TMPDIR/sri-file | openssl base64 -A`
-    echo "sha256-$sha"
+    echo "<script src=\"$1\" integrity=\"sha256-$sha\" crossorigin=\"anonymous\"></script>"
 else
 		sha=`openssl dgst -sha256 -binary "$@" | openssl base64 -A`
-    echo "sha256-$sha"
+    echo "<script src=\"$1\" integrity=\"sha256-$sha\" crossorigin=\"anonymous\"></script>"
 fi
 
