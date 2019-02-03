@@ -50,7 +50,8 @@ def main():
   parser = OptionParser()
   parser.add_option("-o", "--org", dest="org", help="Github.com organization name. Assumes Oauth user if omitted.")
   parser.add_option("-u", "--user", dest="user", help="Github.com user name. Assumes Oauth user if omitted.")
-  parser.add_option("-a", "--a", dest="access_token", help="OAuth Access Token.")
+  parser.add_option("-a", "--access_token", dest="access_token", help="OAuth Access Token.")
+  parser.add_option("-s", "--server", dest="server", help="Github server name alias")
   parser.add_option("-d", "--depth", dest="depth", help="Git clone depth.")
   parser.add_option("-t", "--type", dest="type",  help="Type of repos to return. Org: all, public, private, forks, sources, member. User: all, owner, member. With Token: all, owner, public, private, member. Default is all.")
   parser.add_option("-r", "--run", action="store_true", dest="run", default=False,  help="Execute changes. Default is Dry Run.")
@@ -70,9 +71,15 @@ def main():
       print ''
       for o in data:
         cmd = 'git clone'
+
         if options.depth:
           cmd = '{} --depth {}'.format(cmd, options.depth)
-        cmd = '{} {}'.format(cmd, o['ssh_url'])
+
+        ssh_url = o['ssh_url']
+        if options.server:
+          ssh_url = ssh_url.replace("github.com",options.server)
+
+        cmd = '{} {}'.format(cmd, ssh_url)
 
         if options.run == False:
           print cmd
