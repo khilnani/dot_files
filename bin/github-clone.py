@@ -72,7 +72,7 @@ def main():
         cmd = 'git clone'
         if options.depth:
           cmd = '{} --depth {}'.format(cmd, options.depth)
-        cmd = '{} {}'.format(cmd, o['clone_url'])
+        cmd = '{} {}'.format(cmd, o['ssh_url'])
 
         if options.run == False:
           print cmd
