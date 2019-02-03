@@ -13,5 +13,5 @@ echo "Cloning repos from $filename"
 repos=`cat $filename`
 for repo in $repos;
 do
-  git clone git@$server:natgeo/$repo
+  git clone git@$server:natgeo/$repo --depth 1
 done
