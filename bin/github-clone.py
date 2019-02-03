@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 
 import json, urllib, os, sys, ssl
 from pprint import pprint
@@ -66,9 +66,9 @@ def main():
     data = call_api(options, url, page)
 
     while len(data) > 0:
-      print ''
-      print 'Page: {} Count: {}'.format(page, len(data))
-      print ''
+      print ('')
+      print ('Page: {} Count: {}'.format(page, len(data)))
+      print ('')
       for o in data:
         cmd = 'git clone'
 
@@ -82,14 +82,14 @@ def main():
         cmd = '{} {}'.format(cmd, ssh_url)
 
         if options.run == False:
-          print cmd
+          print (cmd)
         else:
           os.system(cmd)
 
       page += 1
       data = call_api(options, url, page)
   except Exception as e:
-    print e
+    print (e)
 
 #####################################################################
 
@@ -97,4 +97,4 @@ if __name__ == "__main__":
   try:
     main ()
   except KeyboardInterrupt:
-    print 'Execution aborted.'
+    print ('Execution aborted.')
