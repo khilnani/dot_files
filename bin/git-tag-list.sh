@@ -1,4 +1,4 @@
 #!/bin/sh -x
 
-git tag 
+git tag -n5
 
