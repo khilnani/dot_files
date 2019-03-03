@@ -1,5 +1,5 @@
 #!/bin/sh -x
 
-git tag $@
+git tag -a $@
 git push origin --tags
 
