@@ -10,7 +10,7 @@ else
     TMPDIR=/tmp
 fi
 
-echo "Based on https://www.srihash.org"
+#echo "Based on https://www.srihash.org"
 
 if [[ $1 =~ http.* ]] 
 then
