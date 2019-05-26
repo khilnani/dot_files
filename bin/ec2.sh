@@ -5,7 +5,7 @@
 # - START:  ec2.sh NAME start
 # - STOP:   ec2.sh NAME stop
 #
-# Prepend with AWS_PROFILE=NAME ec.sh ..  to specify an AWSprofile
+# Run as: AWS_PROFILE=NAME ec.sh ..  to specify an AWS profile
 
 
 if [ -n "$2" ]; then
