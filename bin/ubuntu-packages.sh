@@ -1,3 +1,3 @@
 #!/bin/sh -x
 
-apt --installed list > ubuntu-packages.txt
+apt --installed list > linux-packages.txt
