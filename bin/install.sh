@@ -11,8 +11,11 @@ BINDIR=/usr/local/bin
 
 if [ "$(uname)" == "Darwin" ]; then
   echo "MacOS"
+elif [[ "$(uname -o)" == "Android" ]]; then
+  echo "Android"
+  BINDIR=$HOME/bin
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
-  echo "Ubuntu"
+  echo "Linux"
   BINDIR=$HOME/bin
 elif [ "$(expr substr $(uname -s) 1 5)" == "MINGW" ]; then
   echo "Windows"
