@@ -7,14 +7,35 @@
 #
 # Run as: AWS_PROFILE=NAME ec.sh ..  to specify an AWS profile
 
+echo ""
 
 if [ -n "$2" ]; then
-    echo "Locating: $1 ..."
+    echo "Looking for instance: $1 ..."
     ID=`aws ec2 describe-instances --filters Name=tag:Name,Values=$1 --output text | grep INSTANCE | awk '{ print $8; }'`
 
-    echo "ID: $ID Action: $2..."
-    aws ec2 $2-instances --instance-ids $ID --output text | grep 'CURRENTSTATE	'
+    # If none
+    if [ -z "$ID" ]; then
+      echo "Could not instance: $1"
+      exit 1
+    else
+      echo "Found it! Trying to $2 ..."
+      STATUS=$(aws ec2 $2-instances --instance-ids $ID --output text 2> /dev/null)
+      if [ -z "$STATUS" ]; then
+        echo "'$2' is not a valid action."
+        exit 1
+      else
+        echo "$STATUS" | grep 'CURRENTSTATE	'
+      fi
+    fi
 else
-    echo "Checking: $1 ..."
-    aws ec2 describe-instances --filters Name=tag:Name,Values=$1 --output text | grep 'STATE	'
+    echo "Checking status for instance: $1 ..."
+    STATUS=$(aws ec2 describe-instances --filters Name=tag:Name,Values=$1 --output text | grep 'STATE	')
+    if [ -z "$STATUS" ]; then
+      echo "Could not find instance: $1"
+      exit 1
+    else
+      echo $STATUS
+    fi
 fi
+
+echo ""
