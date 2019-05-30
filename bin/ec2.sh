@@ -1,27 +1,26 @@
 #!/bin/sh
 
 # USAGE: 
-# - STATUS: ec2.sh NAME
-# - START:  ec2.sh NAME start
-# - STOP:   ec2.sh NAME stop
+# - STATUS:      ec2.sh NAME
+# - START/STOP:  ec2.sh start|stop NAME
 #
 # Run as: AWS_PROFILE=NAME ec.sh ..  to specify an AWS profile
 
 echo ""
 
 if [ -n "$2" ]; then
-    echo "Looking for instance: $1 ..."
-    ID=`aws ec2 describe-instances --filters Name=tag:Name,Values=$1 --output text | grep INSTANCE | awk '{ print $8; }'`
+    echo "Looking for instance: $2 ..."
+    ID=`aws ec2 describe-instances --filters Name=tag:Name,Values=$2 --output text | grep INSTANCE | awk '{ print $8; }'`
 
     # If none
     if [ -z "$ID" ]; then
-      echo "Could not instance: $1"
+      echo "Could not instance: $2"
       exit 1
     else
-      echo "Found it! Trying to $2 ..."
-      STATUS=$(aws ec2 $2-instances --instance-ids $ID --output text 2> /dev/null)
+      echo "Found it! Trying to $1 ..."
+      STATUS=$(aws ec2 $1-instances --instance-ids $ID --output text 2> /dev/null)
       if [ -z "$STATUS" ]; then
-        echo "'$2' is not a valid action."
+        echo "'$1' is not a valid action."
         exit 1
       else
         echo "$STATUS" | grep 'CURRENTSTATE	'
