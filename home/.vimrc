@@ -122,7 +122,7 @@ let &t_te.="\e[0 q"
 
 syntax on
 set background=dark
-"colorscheme jellybeans
+colorscheme jellybeans
 "colorscheme solarized
 
 
