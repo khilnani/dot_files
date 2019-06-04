@@ -1,15 +1,21 @@
 scriptencoding utf-8
 set encoding=utf-8
 
+
 " Windows
 "------------------------
-" :split
-" :vsplit
+" :sp or :LINEsp
+" :vs or :COLvsp
 " <C-W>n new
 " <C-W>s split
 " <C-W>v vsplit
 " <C-W>c close
 " <C-W>o others
+" <C-W>_ maximize window ht
+" <C-W>| maximize window width
+" <C-W>= make window equal size
+" <C-W>- Reduce ht
+" <C-W>+ Increase ht
 map <C-w>] <C-w>w
 map <C-w>[ <C-w>p
 
@@ -92,12 +98,17 @@ set ruler   " display the cursor at all times
 set cursorline
 set number    " display line numbers. note - selecting text will include the line numbers
 set ignorecase    " ignore case when searching
-"set list listchars=tab:→\ ,trail:·,eol:^,nbsp:_
-set list listchars=tab:→\ ,eol:↲,nbsp:␣,trail:•,extends:⟩,precedes:⟨
+
+"set list listchars=tab:→\ ,trail:·,eol:^,nbsp:_      "
+"set list listchars=tab:→\ ,eol:↲,nbsp:␣,trail:•,extends:⟩,precedes:⟨     "
+"set list listchars=tab:··,trail:·,eol:^     "
+set list listchars=tab:··,trail:·   " 
+
 set visualbell    " no audio
 set showcmd   " show incomplete commands in status bar
 set showmode    "show mode at the bottom
 set noautoread    " do not auto load files if mofieid outside
+
 
 " Cursor customization
 let &t_ti.="\e[1 q"
@@ -105,13 +116,15 @@ let &t_SI.="\e[5 q"
 let &t_EI.="\e[1 q"
 let &t_te.="\e[0 q"
 
+
 "----------------------------------------------
 " color schemes
 
 syntax on
 set background=dark
+"colorscheme jellybeans
 "colorscheme solarized
-colorscheme jellybeans
+
 
 "----------------------------------------------
 " code completion
@@ -179,5 +192,4 @@ map <S-s> :ConqueTermSplit bash<CR>
 
 
 " au BufNewFile *.py r ~/.vim/templates/script.py
-
 
