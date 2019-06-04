@@ -1,3 +1,7 @@
+scriptencoding utf-8
+set encoding=utf-8
+
+
 " Windows
 "------------------------
 " :sp or :LINEsp
@@ -45,11 +49,11 @@ map <C-t>o :tabo<CR>
 " indentation 
 
 filetype indent on    " turn on indenting
-set shiftwidth=4
+set shiftwidth=2
 set autoindent    " auto indent. note - causes issues when pasting text with indents
 set smarttab
 set smartindent
-set tabstop=4
+set tabstop=2
 set expandtab
 set nowrap    " do not wrap
 set linebreak   " wraplines at convinient points
@@ -91,14 +95,26 @@ set foldlevel=10
 " display
 
 set ruler   " display the cursor at all times
+set cursorline
 set number    " display line numbers. note - selecting text will include the line numbers
 set ignorecase    " ignore case when searching
-"set list listchars=tab:··,trail:·,eol:^   " display tabs and trailing space$
-set list listchars=tab:··,trail:·   " display tabs and trailing space$
+
+"set list listchars=tab:→\ ,trail:·,eol:^,nbsp:_      "
+"set list listchars=tab:→\ ,eol:↲,nbsp:␣,trail:•,extends:⟩,precedes:⟨     "
+"set list listchars=tab:··,trail:·,eol:^     "
+set list listchars=tab:··,trail:·   " 
+
 set visualbell    " no audio
 set showcmd   " show incomplete commands in status bar
 set showmode    "show mode at the bottom
 set noautoread    " do not auto load files if mofieid outside
+
+
+" Cursor customization
+let &t_ti.="\e[1 q"
+let &t_SI.="\e[5 q"
+let &t_EI.="\e[1 q"
+let &t_te.="\e[0 q"
 
 
 "----------------------------------------------
@@ -106,7 +122,8 @@ set noautoread    " do not auto load files if mofieid outside
 
 syntax on
 set background=dark
-"colorscheme jellybeans
+colorscheme jellybeans
+"colorscheme solarized
 
 
 "----------------------------------------------
