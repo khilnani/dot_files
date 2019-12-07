@@ -1,12 +1,20 @@
 
+" git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+call vundle#end()
+filetype plugin indent on
+
+" Then restart vim and run :PluginInstall
+" To update the plugin to the latest version, you can run :PluginUpdate
+Plugin 'Chiel92/vim-autoformat'
+Plugin 'fatih/vim-go'
 
 "------------------------
-" mkdir -p ~/.vim/autoload ~/.vim/bundle && \
-" curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
-"------------------------
-" git clone https://github.com/fatih/vim-go.git ~/.vim/bundle/vim-go
-"------------------------
-" :GoInstallBinaries
 
 map <C-g>r :GoRun<CR>
 map <C-g>l :GoLint<CR>
@@ -44,10 +52,6 @@ let g:go_auto_type_info = 1
 let g:go_auto_sameids = 1
 set updatetime=100
 
-"------------------------
-execute pathogen#infect()
-syntax on
-filetype plugin indent on
 "------------------------
 
 
