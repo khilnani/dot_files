@@ -56,6 +56,8 @@ let g:anyfold_fold_comments=1
 " zc - close
 " zm - reduces level of fold by one
 " zM - closes all open folds
+" zr - opens level of fold
+" zR - opens all closed folds
 " [z - move to start of open fold
 " ]z - move to end of open fold
 
