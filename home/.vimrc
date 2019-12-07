@@ -29,7 +29,12 @@ let g:formatter_yapf_style = 'pep8'
 " https://github.com/prettier/vim-prettier
 " npm install -g prettier
 " :Prettier
-
+let g:prettier#config#use_tabs = 'false'
+let g:prettier#config#tab_width = 4
+let g:prettier#config#single_quote = 'true'
+let g:prettier#config#semi = 'true'
+let g:prettier#config#bracket_spacing = 'true'
+let g:prettier#config#trailing_comma = 'all'
 let g:prettier#quickfix_enabled = 1
 let g:prettier#quickfix_auto_focus = 0
 let g:prettier#autoformat = 0
