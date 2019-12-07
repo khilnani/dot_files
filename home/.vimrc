@@ -11,10 +11,32 @@ filetype plugin indent on
 
 " Then restart vim and run :PluginInstall
 " To update the plugin to the latest version, you can run :PluginUpdate
+
 Plugin 'Chiel92/vim-autoformat'
 Plugin 'fatih/vim-go'
+Plugin 'prettier/vim-prettier'
 
 "------------------------
+" https://github.com/Chiel92/vim-autoformat
+" :Autoformat
+
+let g:autoformat_autoindent = 0
+let g:autoformat_retab = 0
+let g:autoformat_remove_trailing_spaces = 1
+let g:formatter_yapf_style = 'pep8'
+
+"------------------------
+" https://github.com/prettier/vim-prettier
+" npm install -g prettier
+" :Prettier
+
+let g:prettier#quickfix_enabled = 1
+let g:prettier#quickfix_auto_focus = 0
+let g:prettier#autoformat = 0
+autocmd BufWritePre *.yml,*.yaml,*.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue PrettierAsync
+
+"------------------------
+" https://github.com/fatih/vim-go
 
 map <C-g>r :GoRun<CR>
 map <C-g>l :GoLint<CR>
