@@ -19,6 +19,19 @@ Plugin 'fatih/vim-go'
 Plugin 'prettier/vim-prettier'
 Plugin 'pseewald/vim-anyfold'
 Plugin 'tpope/vim-fugitive'
+Plugin 'airblade/vim-gitgutter'
+
+
+"------------------------
+" https://github.com/airblade/vim-gitgutter
+" :GitGutterEnable
+" :GitGutterDisable
+" :GitGutterToggle
+" jump to next hunk (change): ]c
+" jump to previous hunk (change): [c
+
+let g:gitgutter_max_signs = 500  " default value
+set updatetime=100
 
 "------------------------
 " https://github.com/tpope/vim-fugitive
@@ -48,13 +61,14 @@ let g:anyfold_fold_comments=1
 
 set foldmethod=indent   "fold based on indent, syntax
 set foldnestmax=3       "deepest fold is 3 levels
-"set nofoldenable          " disable folding
-set foldlevel=0
+set nofoldenable          " disable folding
+"set foldlevel=0
 
 "------------------------
 " https://github.com/Chiel92/vim-autoformat
 " :Autoformat
 
+let g:autoformat_verbosemode=1
 let g:autoformat_autoindent = 0
 let g:autoformat_retab = 0
 let g:autoformat_remove_trailing_spaces = 1
