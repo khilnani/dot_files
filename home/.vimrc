@@ -7,7 +7,9 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 call vundle#end()
+
 filetype plugin indent on
+syntax on
 
 " Then restart vim and run :PluginInstall
 " To update the plugin to the latest version, you can run :PluginUpdate
@@ -15,6 +17,29 @@ filetype plugin indent on
 Plugin 'Chiel92/vim-autoformat'
 Plugin 'fatih/vim-go'
 Plugin 'prettier/vim-prettier'
+Plugin 'pseewald/vim-anyfold'
+
+"------------------------
+" https://github.com/pseewald/vim-anyfold
+" [[ AND ]] - navigate
+
+autocmd Filetype * AnyFoldActivate
+let g:anyfold_fold_comments=1
+
+"----------------------------------------------
+" code folding
+" zo - opens all fold
+" zO - opens single fold
+" zc - close
+" zm - reduces level of fold by one
+" zM - closes all open folds
+" [z - move to start of open fold
+" ]z - move to end of open fold
+
+set foldmethod=indent   "fold based on indent, syntax
+set foldnestmax=3       "deepest fold is 3 levels
+"set nofoldenable          " disable folding
+set foldlevel=0
 
 "------------------------
 " https://github.com/Chiel92/vim-autoformat
@@ -151,20 +176,6 @@ set sidescrolloff=15
 set sidescroll=1
 
 
-"----------------------------------------------
-" code folding
-" zo - opens all fold
-" zO - opens single fold
-" zc - closes
-" zm - reduces level of fold by one
-" zM - closes all open folds
-" [z - move to start of open fold
-" ]z - move to end of open fold
-
-set foldmethod=indent   "fold based on indent, syntax
-set foldnestmax=3       "deepest fold is 3 levels
-set nofoldenable          "set nofoldenable
-set foldlevel=10
 
 
 "----------------------------------------------
