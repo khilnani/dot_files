@@ -8,16 +8,17 @@
 "------------------------
 " :GoInstallBinaries
 
-map <C-g>r :GoRun
-map <C-g>l :GoLint
+map <C-g>r :GoRun<CR>
+map <C-g>l :GoLint<CR>
 " gd OR ctrl-] - USE ctrl-t OR ctrl-o to go back
-map <C-g>d :GoDef
-map <C-g>i :GoImports
-map <C-g>v :GoVet
-map <C-g>b :GoBuild
-map <C-g>i :GoInfo
-map <C-g>c :GoCallstack
-map <C-g>e :GoIfErr
+map <C-g>d :GoDef<CR>
+map <C-g>h :GoDoc<CR>
+map <C-g>i :GoImports<CR>
+map <C-g>v :GoVet<CR>
+map <C-g>b :GoBuild<CR>
+map <C-g>i :GoInfo<CR>
+map <C-g>c :GoCallstack<CR>
+map <C-g>e :GoIfErr<CR>
 
 map <C-g>n :cnext<CR>
 map <C-g>m :cprevious<CR>
