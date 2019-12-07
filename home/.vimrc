@@ -18,7 +18,17 @@ Plugin 'Chiel92/vim-autoformat'
 Plugin 'fatih/vim-go'
 Plugin 'prettier/vim-prettier'
 Plugin 'pseewald/vim-anyfold'
+Plugin 'tpope/vim-fugitive'
 
+"------------------------
+" https://github.com/tpope/vim-fugitive
+" :Gdiff
+" :Gstatus
+" :Gcommit %
+" :Gblame
+" :Gmove
+" :Gdelete
+"
 "------------------------
 " https://github.com/pseewald/vim-anyfold
 " [[ AND ]] - navigate
