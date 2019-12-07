@@ -10,6 +10,7 @@
 
 map <C-g>r :GoRun
 map <C-g>l :GoLint
+" gd OR ctrl-] - USE ctrl-t OR ctrl-o to go back
 map <C-g>d :GoDef
 map <C-g>i :GoImports
 map <C-g>v :GoVet
@@ -18,8 +19,29 @@ map <C-g>i :GoInfo
 map <C-g>c :GoCallstack
 map <C-g>e :GoIfErr
 
+map <C-g>n :cnext<CR>
+map <C-g>m :cprevious<CR>
+map <C-g>c :cclose<CR>
 
+" https://github.com/fatih/vim-go-tutorial
+let g:go_highlight_types = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_function_calls = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_extra_types = 1
+let g:go_highlight_build_constraints = 1
+let g:go_list_type = "quickfix"
 let g:go_version_warning = 0
+let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
+let g:go_metalinter_autosave = 1
+let g:go_metalinter_autosave_enabled = ['vet', 'golint']
+let g:go_metalinter_deadline = "5s"
+let g:go_def_mode = 'godef'
+let g:go_decls_includes = "func,type"
+let g:go_auto_type_info = 1
+let g:go_auto_sameids = 1
+set updatetime=100
 
 "------------------------
 execute pathogen#infect()
@@ -70,14 +92,15 @@ map <C-t>o :tabo<CR>
 " indentation 
 
 filetype indent on    " turn on indenting
-set shiftwidth=2
+set shiftwidth=4
 set autoindent    " auto indent. note - causes issues when pasting text with indents
 set smarttab
 set smartindent
-set tabstop=2
-set expandtab
+set tabstop=4
+set noexpandtab
 set nowrap    " do not wrap
 set linebreak   " wraplines at convinient points
+set backspace=indent,eol,start
 
 
 "----------------------------------------------
