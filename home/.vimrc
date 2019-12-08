@@ -96,15 +96,15 @@ autocmd BufWritePre *.yml,*.yaml,*.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss
 
 map <C-g>r :GoRun<CR>
 map <C-g>l :GoLint<CR>
+map <C-g>v :GoVet<CR>
+map <C-g>e :GoErrCheck<CR>
 " gd OR ctrl-] - USE ctrl-t OR ctrl-o to go back
 map <C-g>d :GoDef<CR>
 map <C-g>h :GoDoc<CR>
 map <C-g>i :GoImports<CR>
-map <C-g>v :GoVet<CR>
 map <C-g>b :GoBuild<CR>
 map <C-g>i :GoInfo<CR>
 map <C-g>c :GoCallstack<CR>
-map <C-g>e :GoIfErr<CR>
 
 map <C-g>n :cnext<CR>
 map <C-g>m :cprevious<CR>
@@ -120,7 +120,8 @@ let g:go_highlight_extra_types = 1
 let g:go_highlight_build_constraints = 1
 let g:go_list_type = "quickfix"
 let g:go_version_warning = 0
-let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
+"let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
+let g:go_metalinter_enabled = ['vet']
 let g:go_metalinter_autosave = 1
 let g:go_metalinter_autosave_enabled = ['vet', 'golint']
 let g:go_metalinter_deadline = "5s"
