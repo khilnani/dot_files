@@ -20,6 +20,10 @@ Plugin 'prettier/vim-prettier'
 Plugin 'pseewald/vim-anyfold'
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
+Plugin 'nanotech/jellybeans.vim'
+Plugin 'tomasr/molokai'
+Plugin 'altercation/vim-colors-solarized'
 
 "------------------------
 " https://github.com/airblade/vim-gitgutter
