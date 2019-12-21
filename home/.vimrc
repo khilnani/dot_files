@@ -159,6 +159,7 @@ map <C-w>[ <C-w>p
 " :tabo (others)
 map <C-t>] :tabn<CR>
 map <C-t>[ :tabp<CR>
+map <C-t>t :tabp<CR>
 map <C-t>n :tabnew<CR>
 map <C-t>c :tabc<CR>
 map <C-t>o :tabo<CR>
