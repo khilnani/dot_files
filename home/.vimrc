@@ -21,7 +21,6 @@ Plugin 'pseewald/vim-anyfold'
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 
-
 "------------------------
 " https://github.com/airblade/vim-gitgutter
 " :GitGutterEnable
@@ -223,8 +222,12 @@ set noautoread    " do not auto load files if mofieid outside
 " color schemes
 
 syntax on
-set background=dark
-colorscheme jellybeans
+"set background=dark
+"colorscheme jellybeans
+
+" https://github.com/chriskempson/tomorrow-theme
+set background=light
+colorscheme Tomorrow
 
 
 "----------------------------------------------
