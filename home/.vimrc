@@ -223,10 +223,12 @@ set noautoread    " do not auto load files if mofieid outside
 " color schemes
 
 syntax on
-set background=dark
+" set background=dark
 " colorscheme solarized
-colorscheme jellybeans
+" colorscheme jellybeans
 
+set background=light
+colorscheme Tomorrow
 
 "----------------------------------------------
 " code completion
