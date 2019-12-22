@@ -24,6 +24,9 @@ Plugin 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
 Plugin 'nanotech/jellybeans.vim'
 Plugin 'tomasr/molokai'
 Plugin 'altercation/vim-colors-solarized'
+" :mksession Session.vim OR :mks! Session.vim
+" :source Session.vim OR vi -S Session.vim
+Plugin 'tpope/vim-obsession'
 
 "------------------------
 " https://github.com/airblade/vim-gitgutter
