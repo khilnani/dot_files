@@ -189,7 +189,8 @@ set smarttab
 set smartindent
 set tabstop=4
 set noexpandtab
-set nowrap    " do not wrap
+"set nowrap    " do not wrap
+set wrap " wrap
 set linebreak   " wraplines at convinient points
 set backspace=indent,eol,start
 
