@@ -188,7 +188,11 @@ set autoindent    " auto indent. note - causes issues when pasting text with ind
 set smarttab
 set smartindent
 set tabstop=4
-set noexpandtab
+"
+"retab - to convert to match
+set expandtab
+"set noexpandtab
+"
 "set nowrap    " do not wrap
 set wrap " wrap
 set linebreak   " wraplines at convinient points
