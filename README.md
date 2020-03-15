@@ -18,4 +18,4 @@ Environments
 
 Misc
 
-- `installers` - Tings that can't be copied but need to be installed
+- `installers` - Things that can't be copied but need to be installed
