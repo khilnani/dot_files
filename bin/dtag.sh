@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 function usage() {
     echo "$0 IMAGE TAG"
