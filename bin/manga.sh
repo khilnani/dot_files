@@ -2,4 +2,4 @@
 
 # docker pull mangadl/manga-py
 
-docker run -it -v ${PWD}:/home/manga mangadl/manga-py $1 --name $2
+docker run -it -v ${PWD}:/home/manga mangadl/manga-py $1
