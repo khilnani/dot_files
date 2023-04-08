@@ -9,7 +9,7 @@ do
   [ -e "${f%.*}" ] && rm -rf "${f%.*}"
   mkdir "${f%.*}"
   unrar x "$f" "${f%.*}/"
-  zip -r "${f%.*}.cbz" "${f%.*}"
+  zip -r "${f%.*}.cbz" "${f%.*}/"
   rm -rf "${f%.*}"
 done
 
