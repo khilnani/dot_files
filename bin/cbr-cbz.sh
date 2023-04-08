@@ -7,10 +7,7 @@
 for f in *.cbr
 do
   [ -e "${f%.*}" ] && rm -rf "${f%.*}"
-  mkdir "${f%.*}"
-  unrar x "$f" "${f%.*}/"
-  zip -r "${f%.*}.cbz" "${f%.*}/"
-  rm -rf "${f%.*}"
+  mkdir "${f%.*}" && unrar x "$f" "${f%.*}/" && zip -r "${f%.*}.cbz" "${f%.*}/" && rm -rf "${f%.*}" && rm "$f"
 done
 
 
