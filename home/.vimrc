@@ -143,12 +143,33 @@ set updatetime=100
 " Windows
 "------------------------
 " :split
+" :Nsplit # N rows
 " :vsplit
-" <C-W>n new
-" <C-W>s split
-" <C-W>v vsplit
-" <C-W>c close
-" <C-W>o others
+" :Nvsplit # N cols
+" <C-w>n new
+" <C-w>s split
+" <C-w>v vsplit
+" <C-w>c close
+" <C-w>o others
+" :wall # save all
+" :qall # quit all
+" :wqall # write quit all
+" <C-w> +/- # resize rows
+" <C-w> N +/- # resize rows by N
+" <C-w> >/< # resize columns
+" <C-w> N >/< # resize columns by N
+" <C-w> = # all equal dimensions
+" <C-w> _ # Max height
+" <C-w> | # Max width
+" :resize 60  # resize rows to 60
+" :resize +/-N # add/remove rows
+" :vertical resize N # change columns
+" Ctrl + W + j - move focus down
+" Ctrl + W + k - move focus up
+" Ctrl + W + h - move focus left
+" Ctrl + W + l - move focus right
+" Ctrl + W + t - move focus top
+" Ctrl + W + b - move focus bottom
 map <C-w>] <C-w>w
 map <C-w>[ <C-w>p
 
