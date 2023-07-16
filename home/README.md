@@ -1,13 +1,8 @@
 
 
-## Install
+VBundle
 
-```
-wget https://raw.githubusercontent.com/khilnani/dot_files/master/home/.vimrc -P ~/
-```
-Or
-```
-curl https://raw.githubusercontent.com/khilnani/dot_files/master/home/.vimrc \
-    --create-dirs -o ~/.vimrc
-```
+- https://github.com/VundleVim/Vundle.vim
+- git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
 

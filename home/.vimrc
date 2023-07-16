@@ -183,15 +183,15 @@ map <C-t>o :tabo<CR>
 " indentation 
 
 filetype indent on    " turn on indenting
-set shiftwidth=4
+set shiftwidth=2
 set autoindent    " auto indent. note - causes issues when pasting text with indents
 set smarttab
 set smartindent
-set tabstop=4
+set tabstop=2
 "
 "retab - to convert to match
-set expandtab
-"set noexpandtab
+"set expandtab
+set noexpandtab
 "
 "set nowrap    " do not wrap
 set wrap " wrap
