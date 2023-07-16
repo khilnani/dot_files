@@ -86,7 +86,7 @@ let g:formatter_yapf_style = 'pep8'
 " https://github.com/prettier/vim-prettier
 " npm install -g prettier
 " :Prettier
-let g:prettier#config#use_tabs = 'false'
+let g:prettier#config#use_tabs = 'true'
 let g:prettier#config#tab_width = 4
 let g:prettier#config#single_quote = 'true'
 let g:prettier#config#semi = 'true'
@@ -204,13 +204,18 @@ map <C-t>o :tabo<CR>
 " indentation 
 
 filetype indent on    " turn on indenting
-set shiftwidth=2
+set shiftwidth=4
 set autoindent    " auto indent. note - causes issues when pasting text with indents
 set smarttab
 set smartindent
-set tabstop=2
-"
-"set expandtab
+set tabstop=4
+
+" expand tabs to spaces
+" set expandtab
+" set et
+
+" dont expand tabs, keep tabs
+" set noet
 set noexpandtab
 " :retab - convert tabs to spaces
 " :retab! - convert spaces to tabs
