@@ -281,6 +281,7 @@ set wildignore+=tmp/**
 set wildignore+=*.png,*.jpg,*.gif
 
 "----------------------------------------------
+" USE :term instead, Conque is legacy
 " Terminal in a window setup
 " See https://code.google.com/p/conque
 
