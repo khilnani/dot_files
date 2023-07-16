@@ -210,9 +210,11 @@ set smarttab
 set smartindent
 set tabstop=2
 "
-"retab - to convert to match
 "set expandtab
 set noexpandtab
+" :retab - convert tabs to spaces
+" :retab! - convert spaces to tabs
+
 "
 "set nowrap    " do not wrap
 set wrap " wrap
