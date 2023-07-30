@@ -34,3 +34,7 @@ fi
 rsync -av --progress . $BINDIR --exclude install.sh
 
 chmod 755 $BINDIR/*
+
+# export PATH=~/bin:${PATH}
+
+
