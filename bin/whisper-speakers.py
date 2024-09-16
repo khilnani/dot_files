@@ -1,4 +1,8 @@
 
+
+# https://dmnfarrell.github.io/general/whisper-diarization
+
+
 import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
 
