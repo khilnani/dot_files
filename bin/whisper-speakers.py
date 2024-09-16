@@ -1,7 +1,7 @@
 
 
 # https://dmnfarrell.github.io/general/whisper-diarization
-
+# pip install openai-whisper pyannote.audio
 
 import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
