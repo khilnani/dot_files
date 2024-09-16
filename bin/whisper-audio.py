@@ -9,7 +9,7 @@ print('---')
 file_str = sys.argv[1]
 print('file', file_str)
 
-model_str = sys.argv[2] if len(sys.argv) > 2 else 'tiny'
+model_str = sys.argv[2] if len(sys.argv) > 2 else 'large`'
 print('model', model_str)
 
 print('---')
