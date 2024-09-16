@@ -1,7 +1,11 @@
 
 
 # https://dmnfarrell.github.io/general/whisper-diarization
-# pip install openai-whisper pyannote.audio
+
+# sudo apt update && sudo apt install ffmpeg
+# brew install ffmpeg
+# pip install git+https://github.com/openai/whisper
+# pip install pyannote.audio
 
 import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
